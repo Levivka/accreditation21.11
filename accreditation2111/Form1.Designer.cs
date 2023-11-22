@@ -49,11 +49,11 @@
             afkBT = new Button();
             afkfarmTM = new System.Windows.Forms.Timer(components);
             clickpowerLB = new Label();
-            attackPB = new PictureBox();
-            attackTM = new System.Windows.Forms.Timer(components);
+            helpBT = new Button();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)buttonPB).BeginInit();
             ((System.ComponentModel.ISupportInitialize)mobsPB).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)attackPB).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -110,7 +110,7 @@
             // 
             mobsPB.Enabled = false;
             mobsPB.ErrorImage = null;
-            mobsPB.Location = new Point(562, 32);
+            mobsPB.Location = new Point(562, 94);
             mobsPB.Name = "mobsPB";
             mobsPB.Size = new Size(211, 276);
             mobsPB.SizeMode = PictureBoxSizeMode.Zoom;
@@ -128,7 +128,7 @@
             // 
             // mobBT
             // 
-            mobBT.Location = new Point(562, 32);
+            mobBT.Location = new Point(562, 95);
             mobBT.Name = "mobBT";
             mobBT.Size = new Size(211, 275);
             mobBT.TabIndex = 6;
@@ -141,7 +141,6 @@
             progressBar1.Location = new Point(562, 376);
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(211, 56);
-            progressBar1.Style = ProgressBarStyle.Continuous;
             progressBar1.TabIndex = 7;
             progressBar1.Click += progressBar1_Click;
             // 
@@ -230,17 +229,26 @@
             clickpowerLB.TabIndex = 20;
             clickpowerLB.Text = "Сила клика";
             // 
-            // attackPB
+            // helpBT
             // 
-            attackPB.BackColor = Color.Transparent;
-            attackPB.BackgroundImageLayout = ImageLayout.None;
-            attackPB.Enabled = false;
-            attackPB.Image = Properties.Resources.wand;
-            attackPB.Location = new Point(562, 32);
-            attackPB.Name = "attackPB";
-            attackPB.Size = new Size(211, 275);
-            attackPB.TabIndex = 21;
-            attackPB.TabStop = false;
+            helpBT.Location = new Point(734, 12);
+            helpBT.Name = "helpBT";
+            helpBT.Size = new Size(39, 40);
+            helpBT.TabIndex = 21;
+            helpBT.Text = "button2";
+            helpBT.UseVisualStyleBackColor = true;
+            helpBT.Click += helpBT_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Enabled = false;
+            pictureBox1.Image = Properties.Resources.helpbt;
+            pictureBox1.Location = new Point(734, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(39, 40);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 22;
+            pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -248,7 +256,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
-            Controls.Add(attackPB);
+            Controls.Add(pictureBox1);
+            Controls.Add(helpBT);
             Controls.Add(clickpowerLB);
             Controls.Add(afkBT);
             Controls.Add(moneyringBT);
@@ -269,7 +278,7 @@
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)buttonPB).EndInit();
             ((System.ComponentModel.ISupportInitialize)mobsPB).EndInit();
-            ((System.ComponentModel.ISupportInitialize)attackPB).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -296,7 +305,7 @@
         private Button afkBT;
         private System.Windows.Forms.Timer afkfarmTM;
         private Label clickpowerLB;
-        private PictureBox attackPB;
-        private System.Windows.Forms.Timer attackTM;
+        private Button helpBT;
+        private PictureBox pictureBox1;
     }
 }

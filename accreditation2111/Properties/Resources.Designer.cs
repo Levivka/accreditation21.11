@@ -73,6 +73,16 @@ namespace accreditation2111.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bossbg {
+            get {
+                object obj = ResourceManager.GetObject("bossbg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap buttonclicked {
             get {
                 object obj = ResourceManager.GetObject("buttonclicked", resourceCulture);
@@ -136,6 +146,26 @@ namespace accreditation2111.Properties {
         internal static System.Drawing.Bitmap goblin_8 {
             get {
                 object obj = ResourceManager.GetObject("goblin_8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap helpbt {
+            get {
+                object obj = ResourceManager.GetObject("helpbt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap helpuncliked {
+            get {
+                object obj = ResourceManager.GetObject("helpuncliked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
